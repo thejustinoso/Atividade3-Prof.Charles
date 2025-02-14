@@ -9,3 +9,11 @@ lista_principal = [[random.randint(1, 100) for _ in range(num_elementos)] for _ 
 print('\nLista gerada:')
 for sublista in lista_principal:
     print(sublista)
+
+# Calcula e logo após exibe a lista transposta
+transposta = [[lista_principal[j][i] for j in range(num_sublistas)] for i in range(num_elementos)]
+
+print('\nLista transposta:')
+for linha in transposta:
+    print(linha)
+    
